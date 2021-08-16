@@ -5,7 +5,7 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "jsx": "react",
-    "rootDir": "src",
+    "rootDir": ".",
     "noEmit": true,
     "isolatedModules": true,
     "strict": true,
@@ -18,5 +18,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", ".eslint.js"]
 }
