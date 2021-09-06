@@ -5,6 +5,10 @@
   "author": "João Amadeu <jmamadeu2000@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint --quiet --fix --ext .js,.ts,.tsx",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit --noImplicitAny false",
+    "prettier:write": "npx prettier --write src/**/*.{js,jsx,ts,tsx,json}",
+    "format": "npm run lint && npm run prettier:write",
     "prepare": "husky install"
   },
   "devDependencies": {
